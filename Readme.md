@@ -13,8 +13,9 @@
 <br />
 <br />
 
-The function **displayYpCbCrToRGB** is lifted from one of Apple's demos: "Converting Luminance And Chrominance Planes To An ARGBImage"
-
+The function **displayYpCbCrToRGB** is lifted from one of Apple's demos: "Converting Luminance And Chrominance Planes To An ARGBImage". This demo does not use the functions declared in later versions of macOS.
+<br />
+<br />
 
 Note: It is essential to set the pixel format of the CGImage, vImage_Buffer and CVPixelBuffer objects created correctly. The pixel format of a CGImage object can be determined using its `bitmapInfo` property. For a CVPixelBuffer object, the function **CVPixelBufferGetPixelFormatType** will return its pixel format as an OSType. Currently, there is no function or property available to identify the bitmap information of a vImage_Buffer object.
 <br />
