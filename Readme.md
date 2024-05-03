@@ -21,7 +21,7 @@ Note: It is essential to set the pixel format of the CGImage, vImage_Buffer and 
 <br />
 <br />
 
-### Requirements:###
+### Requirements:
 <br />
 
 XCode 8.x Swift 3.x
