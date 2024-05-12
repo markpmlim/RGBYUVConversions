@@ -213,9 +213,7 @@ class ViewController: NSViewController
     }
 
     // Convert a vImage_Buffer object to a biplanar CVPixelBuffer.
-    // The CVPixelBuffer object is not backed by IOSurface
-    // If you want the CVPixelBuffer object to be backed by an IOSurface, create
-    // a CVPixelBufferPool specifying the `kCVPixelBufferIOSurfacePropertiesKey`.
+    // The CVPixelBuffer object is backed by an IOSurface
     func cvPixelBuffer(from buffer: vImage_Buffer) -> CVPixelBuffer?
     {
         let  width = Int(buffer.width)
